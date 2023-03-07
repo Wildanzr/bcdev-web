@@ -11,27 +11,24 @@ import icon4 from 'assets/icons/service-1-4.svg';
 const SERVICES_DATA = [
   {
     icon: icon1,
-    title: 'Unlimited Customization',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Analisis Kebutuhan Bisnis dan Solusi Teknologi',
+    text: 'Kami melakukan analisis kebutuhan bisnis dan solusi teknologi yang tepat untuk mendukung bisnis Anda'
+      ,
   },
   {
     icon: icon2,
-    title: 'Vector shape & resizable',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Perencanaan Sistem Informasi dan Manajemen Proyek',
+    text: 'Kami melakukan perencanaan sistem informasi dan manajemen proyek untuk memastikan proyek Anda berjalan lancar ',
   },
   {
     icon: icon3,
-    title: 'Editing freedom',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Pengembangan Aplikasi Web Kustom ',
+    text: 'Kami mengembangkan aplikasi web kustom sesuai dengan kebutuhan bisnis Anda ',
   },
   {
     icon: icon4,
-    title: 'Best Award history',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Pemeliharaan dan Dukungan Aplikasi',
+    text: 'Kami memberikan dukungan dan pemeliharaan terhadap aplikasi web Anda',
   },
 ];
 
@@ -40,8 +37,8 @@ const Services = () => {
     <Box sx={styles.services} id="services">
       <Container>
         <BlockTitle
-          slogan="Quality features"
-          title="Meet exciting feature of app"
+          slogan="Transform ideas into reality"
+          title="Layanan yang kami berikan"
           styles={styles.blockTitle}
         />
         <Grid sx={styles.grid}>

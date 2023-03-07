@@ -23,7 +23,7 @@ export default function IndexPage() {
           <Banner />
           <Services />
           <BoostAgencies />
-          <VideoOne />
+          {/* <VideoOne /> */}
           <Testimonials />
           <CustomerSupport />
           <Feature />

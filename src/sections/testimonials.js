@@ -14,39 +14,32 @@ SwiperCore.use([Thumbs, Autoplay]);
 const TESTIMONIALS_DATA = [
   {
     image: img1,
-    heading: 'Pierre Hackett',
-    designation: 'VP of Engineering',
+    heading: 'Utara Setya Wardaya',
+    designation: 'CEO Event Plus',
     content:
       'They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again',
   },
   {
     image: img2,
-    heading: 'Natalia Sanz',
-    designation: 'Head of Technology',
+    heading: 'Abdul Kholid',
+    designation: 'Owner of Sakinah Residence',
     content:
       'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.',
   },
   {
     image: img3,
-    heading: 'Ece Akman',
-    designation: 'Senior Marketer',
+    heading: 'Mardhatillah',
+    designation: 'Lecturer at University Bina Banga Gatsempena',
     content:
       'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.',
   },
   {
     image: img2,
-    heading: 'Natalia Sanz',
-    designation: 'Head of Technology',
+    heading: 'Wildan Azmi',
+    designation: 'Undergraduate Student at University of Brawijaya',
     content:
       'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.',
-  },
-  {
-    image: img3,
-    heading: 'Ece Akman',
-    designation: 'Senior Marketer',
-    content:
-      'Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base.',
-  },
+  }
 ];
 
 const Testimonials = () => {
@@ -86,8 +79,8 @@ const Testimonials = () => {
     <Box as="section" id="testimonials" sx={styles.testimonials}>
       <Container>
         <BlockTitle
-          slogan="Customer Comments"
-          title="Why customers love us"
+          slogan="Testimoni Pelanggan"
+          title="Apa yang mereka katakan tentang kami?"
           styles={styles.blockTitle}
         />
         <Swiper
