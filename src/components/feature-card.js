@@ -1,24 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 import { Link } from 'components/link';
+import { Image as AntImage } from 'antd'
 
 import CommentIcon from 'assets/comment-1.svg';
 
 const FeatureCard = (props) => {
+  // Local States
+  const [visible, setVisible] = useState(false);
+
   return (
     <Box sx={styles.fevCard}>
       <Box className="image" sx={styles.image}>
-        <Image src={props.image} alt="" />
+        <AntImage
+        preview={{
+          visible: false,
+        }}
+        width={'100%'}
+        src={props.image[0]}
+        onClick={() => setVisible(true)}
+      />
+      <div
+        style={{
+          display: 'none',
+        }}
+      >
+        <AntImage.PreviewGroup
+          preview={{
+            visible,
+            onVisibleChange: (vis) => setVisible(vis),
+          }}
+        >
+          <AntImage src={props.image[0]} />
+          <AntImage src={props.image[1]} />
+          <AntImage src={props.image[2]} />
+        </AntImage.PreviewGroup>
+      </div>
       </Box>
       <Box sx={styles.content}>
         <Heading as="h3">
-          <Link path={props.path}>{props.title}</Link>
+          <Link path={props.path} >{props.title}</Link>
         </Heading>
-        <Text as="p">
+        {/* <Text as="p">
           <Image src={CommentIcon} alt="" />
           {props.commentCount}
-        </Text>
+        </Text> */}
       </Box>
     </Box>
   );

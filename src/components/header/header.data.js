@@ -10,5 +10,9 @@ export default [
   {
     path: 'testimonials',
     label: 'Testimonials',
+  },
+  {
+    path: 'showcase',
+    label: 'Showcase',
   }
 ];

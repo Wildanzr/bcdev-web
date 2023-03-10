@@ -5,27 +5,38 @@ import Swiper from 'react-id-swiper';
 
 import FeatureCard from 'components/feature-card';
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa';
-import featureImage1 from 'assets/tutorial-1-1.png';
-import featureImage2 from 'assets/tutorial-1-2.png';
-import featureImage3 from 'assets/tutorial-1-3.png';
+import ev1 from 'assets/ev1.png';
+import ev2 from 'assets/ev2.png';
+import ev3 from 'assets/ev3.png';
+import sk1 from 'assets/sk1.png';
+import sk2 from 'assets/sk2.png';
+import sk3 from 'assets/sk3.png';
+import ol1 from 'assets/ol1.png';
+import ol2 from 'assets/ol2.png';
+import ol3 from 'assets/ol3.png';
 
 const FeatureData = [
   {
-    image: featureImage1,
-    title: 'How to work with prototype design with adobe xd featuring tools',
+    image: [
+      ev1, ev2, ev3
+    ],
+    title: 'EventPlus Landing Page',
     comments: '22 Comments',
     path: '/',
   },
   {
-    image: featureImage2,
-    title: 'Create multiple artboard by using figma prototyping development',
+    image: [
+      ol1, ol2, ol3
+    ],
+    title: 'Online Learning System',
     comments: '15 Comments',
     path: '/',
   },
   {
-    image: featureImage3,
-    title:
-      'Convert your web layout theming easily with sketch zeplin extension',
+    image: [
+      sk1, sk2, sk3
+    ],
+    title: 'Sakinah Residence Marketing Website',
     comments: '12 Comments',
     path: '/',
   },
@@ -82,11 +93,11 @@ const Feature = () => {
     },
   };
   return (
-    <Box sx={styles.features} id="news">
+    <Box sx={styles.features} id="showcase">
       <Container>
         <BlockTitle
-          slogan="Quality features"
-          title="Tutorials that people love most"
+          slogan="Showcase"
+          title="Apa yang kami kerjakan"
           styles={styles.blockTitle}
         />
 

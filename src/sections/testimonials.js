@@ -5,9 +5,9 @@ import { Box, Container, Text, Heading } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import Image from 'components/image';
 
-import img1 from 'assets/testi-1-1.png';
-import img2 from 'assets/testi-1-2.png';
-import img3 from 'assets/testi-1-3.png';
+import img1 from 'assets/3.jpg';
+import img2 from 'assets/2.jpg';
+import img3 from 'assets/1.jpg';
 
 SwiperCore.use([Thumbs, Autoplay]);
 
@@ -17,28 +17,21 @@ const TESTIMONIALS_DATA = [
     heading: 'Utara Setya Wardaya',
     designation: 'CEO Event Plus',
     content:
-      'They are doing amazing job with hundred percent customer satisfaction, Love their work and would like to work with them again',
+      'Pembuatan landing page-nya luar biasa, terlihat profesional dan bener-bener eye-catching!',
   },
   {
     image: img2,
     heading: 'Abdul Kholid',
     designation: 'Owner of Sakinah Residence',
     content:
-      'Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster.',
+      'Website marketing perumahan yang dibuat sangat informatif dan mudah dipahami. Saya senang dengan hasilnya dan yakin akan meningkatkan penjualan.',
   },
   {
     image: img3,
     heading: 'Mardhatillah',
     designation: 'Lecturer at University Bina Banga Gatsempena',
     content:
-      'Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal.',
-  },
-  {
-    image: img2,
-    heading: 'Wildan Azmi',
-    designation: 'Undergraduate Student at University of Brawijaya',
-    content:
-      'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional.',
+      'Saya terkesan dengan hasil pembuatan aplikasi e-learning, saya melihat perubahan positif dalam kualitas pembelajaran siswa. Hasil penerapan e-learning di sekolah saya menunjukkan efektivitasnya dalam meningkatkan pemahaman siswa serta memberikan pengalaman belajar yang bagus.',
   }
 ];
 
@@ -106,7 +99,7 @@ const Testimonials = () => {
         >
           {TESTIMONIALS_DATA.map((testimonial, index) => (
             <SwiperSlide key={`testimonial-info-${index}`}>
-              <Image src={testimonial.image} alt="testimonials image" />
+              <Image src={testimonial.image} alt="testimonials image" css={{ width: '50px', height: '50px', objectFit: 'cover', objectPosition: 'center' }} />
               <Heading as="h3">{testimonial.heading}</Heading>
               <Text as="span">{testimonial.designation}</Text>
             </SwiperSlide>
