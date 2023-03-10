@@ -34,13 +34,19 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <Link
-            path="/"
-            ml={2}
-            label="Contact Us"
+          <ScrollLink
+            activeClass="active"
             sx={styles.headerBtn}
+            to="contacts"
+            ml={2}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             variant="buttons.primary"
-          />
+          >
+            Contact Us
+          </ScrollLink>
 
           <MobileDrawer />
         </Container>
@@ -59,12 +65,13 @@ const styles = {
     border: '2px solid',
     borderColor: 'primary',
     color: 'primary',
+    cursor: 'pointer',
     padding: '8px 24px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
     '&:hover': {
-      color: '#fff',
+      color: 'primary',
     },
   },
   header: {
