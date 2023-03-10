@@ -14,21 +14,17 @@ const CustomerSupport = () => {
           <Box sx={styles.col}>
             <Box sx={styles.content}>
               <Heading as="h3">
-                Free Customer Support to ensure what you like to expect
+                Anda ingin mempunyai website atau aplikasi?
               </Heading>
               <Text as="p">
-                We offer a risk-free trial period of up to two weeks. You will
-                only have to pay if you are happy with the developer and wish to
-                continue. If you are unsatisfied, we’ll refund payment or fix
-                issues on our dime period customers.
+                Jangan ragu untuk menghubungi kami. Kami akan mewujudkan ide Anda menjadi sebuah produk website atau aplikasi yang berkualitas.
               </Text>
               <Text as="p" sx={styles.specialText}>
-                If you are happy with the developer and wish to continue. If you
-                are unsatisfied, we’ll refund payment or fix issues.
+                Anda dapat menginformasikan kebuthan apa saja yang ingin dikembangkan, tim kami akan mengerjakan sesuai dengan kebutuhan Anda.
               </Text>
-              <Link path="/" sx={styles.link}>
+              {/* <Link path="/" sx={styles.link}>
                 Learn more <FaAngleRight />
-              </Link>
+              </Link> */}
             </Box>
           </Box>
           <Box sx={styles.col}>

@@ -75,7 +75,19 @@ const MobileDrawer = () => {
 
           <Box sx={styles.menuFooter}>
             <Button variant="primary" sx={styles.button}>
-              Register Now
+              <ScrollLink
+                activeClass="active"
+                sx={styles.headerBtn}
+                to="contacts"
+                ml={2}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                variant="buttons.primary"
+              >
+                Contact Us
+            </ScrollLink>
             </Button>
           </Box>
         </Box>

@@ -16,30 +16,33 @@ const BoostAgencies = () => {
             <Box sx={styles.content}>
               <Box sx={styles.titleBox}>
                 <Heading as="h3">
-                  Boost your agencies by choosing Ninja Developers
+                  Tingkatkan pelayanan bisnis Anda dengan memanfaatkan teknologi!
                 </Heading>
                 <Text as="p">
-                  Create custom landing pages with Shades that convert more
-                  visitors than any website, no coding required.
+                  Dengan website yang berisi informasi dan kemudahan akses, Anda dapat meningkatkan pelayanan bisnis. Apa saja yang bisa kami buatkan untuk Anda?
                 </Text>
               </Box>
               <Box as="ul" sx={styles.list}>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Unlimited design possibility
+                  Landing page
                 </Text>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Completely responsive features
+                  Sistem Informasi dan Manajemen
                 </Text>
                 <Text as="li">
                   <IoIosCheckmarkCircle />
-                  Easy to customize plugins
+                  Aplikasi Website Kustom
+                </Text>
+                <Text as="li">
+                  <IoIosCheckmarkCircle />
+                  Website Kustom
                 </Text>
               </Box>
-              <Link path="/" sx={styles.link}>
+              {/* <Link path="/" sx={styles.link}>
                 Learn more <FaAngleRight />
-              </Link>
+              </Link> */}
             </Box>
           </Flex>
           <Flex sx={styles.col}>

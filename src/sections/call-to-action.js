@@ -2,17 +2,35 @@ import React from 'react';
 import { Box, Container, Heading, Button } from 'theme-ui';
 import BgShape from 'assets/cta-shape-1.svg';
 import btnShape from 'assets/cta-btn-shape-1.svg';
+import { RiHomeHeartLine, RiMailSendLine, RiWhatsappLine } from 'react-icons/ri';
+
 const CallToAction = () => {
+  // Go to whatsapp
+  const handleWhatsapp = () => {
+    window.open('https://wa.me/6281335488360?text=Hii%20BCDev..%0ASaya%20ingin%20mempunyai%20aplikasi%20atau%20website%20dengan%20keperluan%20.........', '_blank', 'noopener,noreferrer')
+  }
   return (
-    <Box sx={styles.wrapper}>
+    <Box sx={styles.wrapper} id='contacts'>
       <Container sx={styles.container}>
         <Box sx={styles.inner}>
-          <Heading as="h3">
-            Hire the world’s best developers <br />
-            and designers around!
-          </Heading>
+          <div>
+            <Heading as="h3">
+              Hubungi kami
+            </Heading>
+            <Box as="h4">
+              <RiHomeHeartLine />
+              <span css={{ color: '#fff', backgroundColor: '#fff' }}>Jln. Senggani No.7 Malang</span>
+            </Box>
+            <Box as="h4">
+              <RiMailSendLine />
+              <span>binaceriadev@gmail.com</span>
+            </Box>
+          </div>
           <Box sx={styles.btnWrapper}>
-            <Button sx={styles.btn}>HIRE DEVELOPERS</Button>
+            <Button sx={styles.btn} onClick={() => handleWhatsapp()}>
+              <RiWhatsappLine size={'40px'} />
+              <span>Whatsapp</span>
+            </Button>
           </Box>
         </Box>
       </Container>
@@ -50,14 +68,33 @@ const styles = {
         display: ['none', null, null, 'inherit'],
       },
     },
+    h4: {
+      color: '#fff',
+      fontSize: [1, null, 2],
+      lineHeight: [1.87, null, 2.33],
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px',
+      marginBottom: ['30px', null, null, '0'],
+      svg: {
+        fontSize: [3, null, 4],
+      },
+      span: {
+        display: 'block',
+      },
+    },
   },
   btn: {
-    backgroundColor: '#fff',
-    color: 'primary',
+    backgroundColor: '#25D366',
+    color: '#fff',
     borderRadius: '5px',
     fontSize: [0, 1, null, null, null, null, '17px'],
     fontWeight: '700',
     letterSpacing: '0.1em',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '10px',
     fontFamily: 'body',
     padding: ['10px 24px', null, null, null, null, '15px 44px'],
     position: 'relative',

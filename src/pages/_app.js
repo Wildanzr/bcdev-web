@@ -5,6 +5,8 @@ import 'swiper/swiper-bundle.min.css';
 import 'rc-drawer/assets/index.css';
 import 'react-modal-video/css/modal-video.min.css';
 import 'typeface-dm-sans';
+import 'antd/dist/reset.css';
+import './index.css';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
